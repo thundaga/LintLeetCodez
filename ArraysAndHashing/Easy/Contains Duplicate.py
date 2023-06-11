@@ -2,7 +2,7 @@
     Given an integer array nums, return true if any value appears at least twice in the array, 
     and return false if every element is distinct.
 """
-
+# overall Complexity | Time O(n) | Space O(n)
 class Solution(object):
     def containsDuplicate(self, nums):
         """
@@ -18,6 +18,5 @@ class Solution(object):
             else:
                 output = True
                 break
-        
-        # overall Complexity | Time O(n) | Space O(n)
+
         return output
