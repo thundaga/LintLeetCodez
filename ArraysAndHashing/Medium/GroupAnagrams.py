@@ -21,6 +21,7 @@ class Solution:
             strCharCounts = [0 for i in range(26)]
             tempStr = ""
 
+            # ordinal returns ascii value of char with a as the minimum character
             for char in string:
                 charCounts[ord(char) - ord("a")] += 1
                 strCharCounts[ord(char) - ord("a")] = char
