@@ -4,7 +4,7 @@
     An Anagram is a word or phrase formed by rearranging the letters of a different word or phrase, 
     typically using all the original letters exactly once.
 """
-# Total complexity time O(s + t) | Space O(n)
+# Overall complexity | time O(s + t) | Space O(n)
 class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
         if len(s) != len(t):

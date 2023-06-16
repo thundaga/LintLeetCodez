@@ -8,7 +8,7 @@ and not use the same element twice.
 Answer can be returned in any order.
 """
 
-# Overall complexity time O(2n) | space O(n)
+# Overall complexity | time O(n) | space O(n)
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         dict_val = {}
