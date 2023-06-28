@@ -4,12 +4,13 @@
     An Anagram is a word or phrase formed by rearranging the letters of a different word or phrase, 
     typically using all the original letters exactly once.
 """
-# overall Complexity  | Time O(n * k) 
-# base complexity O(n * K * 26(2) + n)
+# overall Complexity | Time O(n * k) | Space O(n)
+# base complexity O(n * K * 26 + n)
 # n = the array holding the strings
 # k = average length of each string length
-# 26(2) | 0(1) = the two loops for building the charCounts and tempStr a-z(26 letters)
+# 26 | 0(1) = the loop for building the charCounts to tempStr a-z(26 letters)
 # additional complexity to iterate and build final list, worst case O(n)
+# Space complexity to build dictionary worst case each string in array is unique O(n)
 class Solution:
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
         strKeyValues = {} # key = strCharcounts: value = List[strings]
